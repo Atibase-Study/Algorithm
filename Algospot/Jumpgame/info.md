@@ -50,5 +50,8 @@
 
 ## 예제 출력
 
-YES 
-NO
+YES    
+NO  
+
+## 링크
+https://algospot.com/judge/problem/read/JUMPGAME
