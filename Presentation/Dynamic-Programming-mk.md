@@ -80,7 +80,7 @@ int main()
 				- 다차원 배열일 때 유용한데, 인덱스 순서를 바꿔 쓴다던가 하는 실수를 할 가능성을 줄여준다.
 
 
-## 동적 계획법의 적용
+## 예제를 통해 본 동적 계획 접근법
 * 외발 뛰기 ( ID : JUMPGAME )
 	- https://algospot.com/judge/problem/read/JUMPGAME
 * 삼각형 위의 최대 경로 ( ID : TRIANGLEPATH )
