@@ -29,4 +29,6 @@
 4. 2016/06/03 - 강민구
 	- Algospot : LIS
 	- Algospot : JLIS
-
+5. 2016/06/10 - 송명선
+	- Algospot : TRAVERSAL
+	- Algospot : FORTRESS
