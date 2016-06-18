@@ -32,3 +32,6 @@
 5. 2016/06/10 - 송명선
 	- Algospot : TRAVERSAL
 	- Algospot : FORTRESS
+6. 2016/06/17 - 박기태
+	- Algospot : NUMB3RS
+	- Algospot : ASYMTILING
