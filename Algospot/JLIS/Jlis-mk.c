@@ -8,9 +8,22 @@
 int gLis[MAX_N + 1][MAX_N + 1] = {0, };
 
 void func();
+
 int jlis( int  aNumOfNumA, int aNumOfNumB, 
 		  int  aNumA[], int aNumB[], 
 		  int  aAIdx, int aBIdx );
+
+void initializeGLis( int A, int B)
+{
+	int i = 0;
+	int j = 0;
+
+	for ( i = 0; i < A + 1; i++ )
+	{
+		for ( j = 0; j < B + 1; j++ )
+			gLis[i][j] = 0;
+	}
+}
 
 int main( void )
 {
@@ -48,16 +61,22 @@ void func()
 		scanf( "%d", &sNumB[i] );
 	}
 
+	initializeGLis( sNumOfNumA, sNumOfNumB );
+
+	for ( i = 1; i < sNumOfNumA + 1; i++ )
+		sMax = MAX( sMax, jlis( sNumOfNumA, sNumOfNumB, sNumA, sNumB, i, 0 ) );
+
+	for ( i = 0; i < sNumOfNumB + 1; i++ )
+		sMax = MAX( sMax, jlis( sNumOfNumA, sNumOfNumB, sNumA, sNumB, 0, i ) );
+
+	
 	for ( i = 0; i < sNumOfNumA + 1; i++ )
 	{
 		for ( j = 0; j < sNumOfNumB + 1; j++ )
-			gLis[i][j] = 0;
-	}
+			printf( "[%d][%d] : %d ", i, j, gLis[i][j] );
 
-	if ( sNumA[1] <= sNumB[1] )
-		sMax = jlis( sNumOfNumA, sNumOfNumB, sNumA, sNumB, 1, 0 );
-	else
-		sMax = jlis( sNumOfNumA, sNumOfNumB, sNumA, sNumB, 0, 1 );
+		printf( "\n" );
+	}
 
 	printf( "%d\n", sMax );
 }
@@ -67,6 +86,7 @@ int jlis( int  aNumOfNumA, int aNumOfNumB,
 		  int  aAIdx, int aBIdx )
 {
 	int i = 0;
+
 	int *ret = &( gLis[aAIdx][aBIdx] );
 	int curNum = MAX( aNumA[aAIdx], aNumB[aBIdx] );
 
@@ -83,7 +103,7 @@ int jlis( int  aNumOfNumA, int aNumOfNumB,
 
 	for ( i = aBIdx + 1; i < aNumOfNumB + 1; i++ )
 	{
-		if ( aNumA[i] > curNum )
+		if ( aNumB[i] > curNum )
 			*ret = MAX( *ret, jlis( aNumOfNumA, aNumOfNumB, aNumA, aNumB, aAIdx, i ) + 1 );
 	}
 
