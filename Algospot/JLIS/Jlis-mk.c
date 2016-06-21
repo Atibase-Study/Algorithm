@@ -66,17 +66,8 @@ void func()
 	for ( i = 1; i < sNumOfNumA + 1; i++ )
 		sMax = MAX( sMax, jlis( sNumOfNumA, sNumOfNumB, sNumA, sNumB, i, 0 ) );
 
-	for ( i = 0; i < sNumOfNumB + 1; i++ )
+	for ( i = 1; i < sNumOfNumB + 1; i++ )
 		sMax = MAX( sMax, jlis( sNumOfNumA, sNumOfNumB, sNumA, sNumB, 0, i ) );
-
-	
-	for ( i = 0; i < sNumOfNumA + 1; i++ )
-	{
-		for ( j = 0; j < sNumOfNumB + 1; j++ )
-			printf( "[%d][%d] : %d ", i, j, gLis[i][j] );
-
-		printf( "\n" );
-	}
 
 	printf( "%d\n", sMax );
 }
