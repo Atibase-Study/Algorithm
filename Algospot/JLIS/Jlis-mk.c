@@ -44,8 +44,8 @@ void func()
 
 	int sNumOfNumA = 0;
 	int sNumOfNumB = 0;
-	int sNumA[MAX_N] = { 0, };
-	int sNumB[MAX_N] = { 0, };
+	int sNumA[MAX_N + 1] = { 0, };
+	int sNumB[MAX_N + 1] = { 0, };
 
 	int sMax = 0;
 
@@ -53,12 +53,12 @@ void func()
 
 	for ( i = 1; i < sNumOfNumA + 1; i++ )
 	{
-		scanf( "%d", &sNumA[i] );
+		scanf( "%lld", &sNumA[i] );
 	}
 
 	for ( i = 1; i < sNumOfNumB + 1; i++ )
 	{
-		scanf( "%d", &sNumB[i] );
+		scanf( "%lld", &sNumB[i] );
 	}
 
 	initializeGLis( sNumOfNumA, sNumOfNumB );
