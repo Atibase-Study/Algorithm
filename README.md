@@ -35,3 +35,7 @@
 6. 2016/06/17 - 박기태
 	- Algospot : NUMB3RS
 	- Algospot : ASYMTILING
+
+8. 2016/08/05 - 강민구
+	- Algospot : ITES (https://algospot.com/judge/problem/read/ITES)
+	- Algospot : POLY (https://algospot.com/judge/problem/read/POLY)
