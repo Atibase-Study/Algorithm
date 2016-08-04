@@ -37,4 +37,7 @@ K가 외계인에게 의미 있는 숫자일까요? 수환이의 가설을 확�
 
 1  
 4  
-1049  
+1049 
+
+## 링크
+https://algospot.com/judge/problem/read/ITES
