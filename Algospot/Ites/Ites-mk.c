@@ -5,11 +5,11 @@
 #define MAX_K 5000000
 #define MAX_N 50000000
 
-/* 2^32 로 mod 연산을 해야하지만 unsigned int 이므로 mod 하지  않아도 된다. */
+/* 2^32 로 mod 연산을 해야하지만 unsigned int 이므로 mod 하지 않아도 된다. */
 #define MAKE_A( A ) ( A * 214013 + 2531011 ) 
 #define MAKE_SIGNAL( A ) ( A % 10000 + 1 )
 
-void Ites( void )
+void itesFunc( void )
 {
 	int i = 0;
 	int sNumOfSignal = 0;
@@ -59,7 +59,7 @@ int main( void )
 	scanf( "%d", &sNumOfTest );
 	for ( i = 0; i < sNumOfTest; i++ )
 	{
-		Ites();
+		itesFunc();
 	}
 
 	return 0;
