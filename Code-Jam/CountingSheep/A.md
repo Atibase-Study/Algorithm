@@ -36,7 +36,7 @@ For each test case, output one line containing Case #x: y, where x is the test c
 
 ### Large dataset
 
-0 ≤ N ≤ 106.
+0 ≤ N ≤ 10^6.
 
 
 ## Sample
