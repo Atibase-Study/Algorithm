@@ -43,3 +43,6 @@
 	- Algospot : POLY (https://algospot.com/judge/problem/read/POLY)
 9. 2016/08/12 - 김정근
 	- Code Jam : Counting Sheep ( https://code.google.com/codejam/contest/dashboard?c=6254486#s=p0&a=0 )
+10. 강민구
+	- Algospot : TICTACTOE
+	- Algospot : BLOCKGAME
