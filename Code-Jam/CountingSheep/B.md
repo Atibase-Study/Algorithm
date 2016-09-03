@@ -43,7 +43,8 @@ Every character in S is either + or -.
 
 ### Input  
 5  
--  
+
+-   
 -+  
 +-  
 +++  
